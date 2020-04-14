@@ -1,7 +1,9 @@
-import covid19ImpactEstimator
+
 
 def estimator(data):
+   
   return data
+
 def estimator(impact):
   monthWeeks = month * 4
   weekDays = week * 7
