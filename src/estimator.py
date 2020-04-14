@@ -1,3 +1,5 @@
+import covid19ImpactEstimator
+
 def estimator(data):
   return data
 def estimator(impact):
