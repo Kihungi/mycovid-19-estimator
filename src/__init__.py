@@ -1,4 +1,5 @@
-region = {
+def estimator(data):
+   region = {
    "name": "Africa",
    "avgAge": 19.75,
    "avgIncomeInUSD": 4,
@@ -13,3 +14,4 @@ region = {
   data : {},
   impact : {},
   severeImpact : {}
+retrurn data   
