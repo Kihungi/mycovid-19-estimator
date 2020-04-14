@@ -11,7 +11,7 @@ def estimator(data):
  "population": 66622705  
  "totalHospitalBeds": 1380614
   
- data : {},
- impact : {},
+ data : {}
+ impact : {}
  severeImpact : {}
-retrurn data   
+return data   
