@@ -1,3 +1,4 @@
+
 import _init_
 
   _init_.estimator(data):
@@ -23,3 +24,4 @@ import _init_
    severeImpact.casesForVentilatorsByRequestedTime = 0.02 * infectionsByRequestedTime
    severeImpact.dollarsInFlight = infectionsByRequestedTime * avgDailyIncomePopulation * avgDailyIncomeInUSD * totalDays
  return severeImpact
+
