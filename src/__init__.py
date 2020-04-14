@@ -4,7 +4,7 @@ def estimator(data):
   "avgAge": 19.75,
   "avgIncomeInUSD": 4,
   "avgDailyIncomePopulationInUSD": 0.71
- },
+ }
  "periodType": "days"
  "timeToElapse": 58
  "reportedCases": 674
