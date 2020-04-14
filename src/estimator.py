@@ -1,5 +1,8 @@
 import _init_
 
+  _init_.estimator(data):
+  return data
+
   _init_.estimator(impact):
     impact.currentlyInfected = reportedCases * 10
     factor = int(totalDays/3)
