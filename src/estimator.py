@@ -1,10 +1,10 @@
 
 import _init_
 
-_init_.estimator(data):
+def estimator(data):
 return data
 
-_init_.estimator(impact):
+def estimator(impact):
     impact.currentlyInfected = reportedCases * 10
     factor = int(totalDays/3)
     impact.infectionsByRequestedTime = currentlyInfected * 2^factor
@@ -15,7 +15,7 @@ _init_.estimator(impact):
     impact.dollarsInFlight = infectionsByRequestedTime * avgDailyIncomeInUSD * totalDays
 return impact
 
-_init_.estimator(severeImpact):
+def estimator(severeImpact):
    severeImpact.currentlyInfected = reportedCases * 50
    severeImpact.infectionsByRequestedTime = currentlyInfected * 2^factor
    severeImpact.severeCasesByRequestedTime = 0.15 * infectionsByRequestedTime
