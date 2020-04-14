@@ -5,7 +5,7 @@ def estimator(impact):
   weekDays = week * 7
   totalDays = monthWeeks + weekDays + days
   currentlyInfected = reportedCases * 10
-  factor = totalDays/3;
+  factor = int(totalDays/3)
   infectionsByRequestedTime = currentlyInfected * 2^factor
   severeCasesByRequestedTime = 0.15 * infectionsByRequestedTime
   hospitalBedsByRequestedTime= totalHospitalBeds - severeCasesByRequestedTime
