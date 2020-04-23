@@ -1,6 +1,6 @@
 
 data = {
- region: {
+ "region": {
   "name" : "Africa",
   "avgAge": 19.75,
   "avgIncomeInUSD": 4,
@@ -21,8 +21,7 @@ def estimator(data):
  days = 365
  factor = int(days/3)
  estimate = {
-  
-  impact: {
+  "impact": {
      "currentlyInfected" : "reportedCases" * 10,
      "infectionsByRequestedTime" : "currentlyInfected" * 2^factor,
      "severeCasesByRequestedTime" : 0.15 * "infectionsByRequestedTime",
@@ -31,7 +30,7 @@ def estimator(data):
      "casesForVentilatorsByRequestedTime" : 0.02 * "infectionsByRequestedTime",
      "dollarsInFlight" : "infectionsByRequestedTime" * "avgDailyIncomeInUSD" * days
   },
-  severeImpact: {
+  "severeImpact": {
     "currentlyInfected" : "reportedCases" * 50,
     "infectionsByRequestedTime" : "currentlyInfected" * 2^factor,
     "severeCasesByRequestedTime" : 0.15 * "infectionsByRequestedTime",
