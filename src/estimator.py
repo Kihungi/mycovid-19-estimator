@@ -1,23 +1,34 @@
 
-import _init_
+data = {
+ region: {
+  "name": "Africa",
+  "avgAge": 19.75,
+  "avgIncomeInUSD": 4,
+  "avgDailyIncomePopulationInUSD": 0.71
+ }
+ periodType = "days"
+ timeToElapse = 58
+ reportedCases = 674
+ population = 66622705  
+ totalHospitalBeds = 1380614
+}
+ 
 
 def estimator(data):
  return data
 
-factor = int(days/3)
-
-
-impact.update({
-    "currentlyInfected" : reportedCases * 10,
-    "infectionsByRequestedTime" : currentlyInfected * 2^factor,
-    "severeCasesByRequestedTime" : 0.15 * infectionsByRequestedTime
-    "hospitalBedsByRequestedTime" : totalHospitalBeds - severeCasesByRequestedTime
-    "casesForICUByRequestedTime" : 0.05 * infectionsByRequestedTime
-    "casesForVentilatorsByRequestedTime" : 0.02 * infectionsByRequestedTime
-    "dollarsInFlight" : infectionsByRequestedTime * avgDailyIncomeInUSD * days
-})
-
-severeImpact.update({
+estimator = {
+  factor = int(days/3)
+  impact: {
+     "currentlyInfected" : reportedCases * 10,
+     "infectionsByRequestedTime" : currentlyInfected * 2^factor,
+     "severeCasesByRequestedTime" : 0.15 * infectionsByRequestedTime
+     "hospitalBedsByRequestedTime" : totalHospitalBeds - severeCasesByRequestedTime
+     "casesForICUByRequestedTime" : 0.05 * infectionsByRequestedTime
+     "casesForVentilatorsByRequestedTime" : 0.02 * infectionsByRequestedTime
+     "dollarsInFlight" : infectionsByRequestedTime * avgDailyIncomeInUSD * days
+  }
+  severeImpact: {
     "currentlyInfected" : reportedCases * 50,
     "infectionsByRequestedTime" : currentlyInfected * 2^factor,
     "severeCasesByRequestedTime" : 0.15 * infectionsByRequestedTime
@@ -25,4 +36,5 @@ severeImpact.update({
     "casesForICUByRequestedTime" : 0.05 * infectionsByRequestedTime
     "casesForVentilatorsByRequestedTime" : 0.02 * infectionsByRequestedTime
     "dollarsInFlight" : infectionsByRequestedTime * avgDailyIncomeInUSD * days
-})
+  }
+}
