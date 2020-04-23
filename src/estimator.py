@@ -12,12 +12,13 @@ data = {
  population = 66622705  
  totalHospitalBeds = 1380614
 }
+
+for x in data:
+ print(x)
  
 
 def estimator(data):
- return data
-
-estimator = {
+ estimate = {
   factor = int(days/3)
   impact: {
      "currentlyInfected" : reportedCases * 10,
@@ -37,4 +38,12 @@ estimator = {
     "casesForVentilatorsByRequestedTime" : 0.02 * infectionsByRequestedTime
     "dollarsInFlight" : infectionsByRequestedTime * avgDailyIncomeInUSD * days
   }
-}
+ }
+ return data
+ for x,y in estimate:
+  print(x,y)
+  
+estimator()
+
+
+
