@@ -1,12 +1,12 @@
 
 data = {
  region: {
-  "name": "Africa",
+  "name" : "Africa",
   "avgAge": 19.75,
   "avgIncomeInUSD": 4,
   "avgDailyIncomePopulationInUSD": 0.71
- }
- "periodType": "days",
+ },
+ "periodType" : "days",
  "timeToElapse": 58,
  "reportedCases": 674,
  "population": 66622705,  
@@ -30,7 +30,7 @@ def estimator(data):
      "casesForICUByRequestedTime" : 0.05 * "infectionsByRequestedTime",
      "casesForVentilatorsByRequestedTime" : 0.02 * "infectionsByRequestedTime",
      "dollarsInFlight" : "infectionsByRequestedTime" * "avgDailyIncomeInUSD" * days
-  }
+  },
   severeImpact: {
     "currentlyInfected" : "reportedCases" * 50,
     "infectionsByRequestedTime" : "currentlyInfected" * 2^factor,
