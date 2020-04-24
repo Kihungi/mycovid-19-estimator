@@ -1,4 +1,4 @@
- yarn import
+yarn import
 import Json
 
 data = {
