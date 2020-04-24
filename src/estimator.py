@@ -1,5 +1,4 @@
-
-import yarn
+ yarn import
 import json
 
 data = {
@@ -47,9 +46,10 @@ def estimator(data):
  for x,y in estimate:
   print(x,y)
   
-yarn run test  
   
 estimator()
+
+yarn run test  
 
 
 
