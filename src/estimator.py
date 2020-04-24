@@ -49,5 +49,7 @@ def estimator(data):
   
 estimator()
 
+yarn run test
+
 
 
